@@ -1,3 +1,4 @@
+//signup ka code
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { User } from "lucide-react"
@@ -65,39 +66,39 @@ const SignupPage = () => {
     return (<>
         <Navbar pathname="/signup" />
         <main
-            className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className} `}
+            className={`flex flex-col items-center justify-between p-16 ${inter.className} `}
         >
-            <div className="max-w-sm w-full flex flex-col justify-center items-center gap-8">
-                <User className="size-20 text-violet-500" />
-                <p>Already have an account <Link className="text-violet-500" href="/">Sign in</Link></p>
+            <div className="max-w-lg w-full flex flex-col justify-center items-center gap-8 p-8 bg-white">
+                <User className="size-20 text-rose-500" />
+                <p>Already have an account <Link className="text-rose-500" href="/">Sign in</Link></p>
 
                 <div className="w-full space-y-3">
                     <div className="w-full">
-                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-violet-500 rounded-lg" placeholder="Full name" value={userDetails.fullname} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, fullname: value })} />
+                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-rose-500 rounded-lg" placeholder="Full name" value={userDetails.fullname} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, fullname: value })} />
                     </div>
 
                     <div className="w-full">
-                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-violet-500 rounded-lg" placeholder="Email Address" value={userDetails.email} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, email: value })} />
+                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-rose-500 rounded-lg" placeholder="Email Address" value={userDetails.email} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, email: value })} />
                     </div>
 
                     <div className="w-full">
-                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-violet-500 rounded-lg" placeholder="Phone no" value={userDetails.phone} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, phone: value })} />
+                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-rose-500 rounded-lg" placeholder="Phone no" value={userDetails.phone} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, phone: value })} />
                     </div>
 
                     <div className={`w-full${!userDetails.dob ? " text-gray-400" : ""}`}>
-                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-violet-500 rounded-lg" placeholder="Date of birth" type="date" value={userDetails.dob} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, dob: value })} />
+                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-rose-500 rounded-lg" placeholder="Date of birth" type="date" value={userDetails.dob} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, dob: value })} />
                     </div>
 
                     <div className="w-full">
-                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-violet-500 rounded-lg" placeholder="Password" type="password" value={userDetails.password} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, password: value })} />
+                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-rose-500 rounded-lg" placeholder="Password" type="password" value={userDetails.password} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, password: value })} />
                     </div>
 
                     <div className="w-full">
-                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-violet-500 rounded-lg" placeholder="Confirm Password" type="password" value={userDetails.confirmPassword} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, confirmPassword: value })} />
+                        <input className="w-full outline-none p-2 border border-gray-300 focus:ring-1 ring-rose-500 rounded-lg" placeholder="Confirm Password" type="password" value={userDetails.confirmPassword} onChange={({ target: { value } }) => setUserDetails({ ...userDetails, confirmPassword: value })} />
                     </div>
                 </div>
 
-                <button className="bg-violet-500 text-white px-4 py-2 rounded-lg hover:bg-opacity-80 transition-all ease-in-out duration-200" onClick={handleSignup}>Sign up</button>
+                <button className="bg-rose-500 text-white px-4 py-2 rounded-lg hover:bg-opacity-80 transition-all ease-in-out duration-200" onClick={handleSignup}>Sign up</button>
             </div >
         </main ></>
     )
