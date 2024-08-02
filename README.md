@@ -1,40 +1,152 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Login Signup Project
 
-First, run the development server:
+This project is a login and signup system built with Next.js, React, and various other dependencies to handle authentication and user management.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Table of Contents
+
+- [Installation](#installation)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
+- [Dev Dependencies](#dev-dependencies)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [License](#license)
+
+## Installation
+
+To get started, clone the repository and install the dependencies:
+
+```sh
+git clone https://github.com/<your-username>/Authentication.git
+cd Authentication
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Here are the scripts you can run for different tasks:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Development Server**: 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  ```sh
+  npm run dev
+  ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  Starts the development server.
 
-## Learn More
+- **Build**: 
 
-To learn more about Next.js, take a look at the following resources:
+  ```sh
+  npm run build
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  Builds the application for production.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Start**: 
 
-## Deploy on Vercel
+  ```sh
+  npm run start
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  Starts the application in production mode.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Lint**: 
+
+  ```sh
+  npm run lint
+  ```
+
+  Runs the linter.
+
+## Dependencies
+
+These are the main dependencies used in the project:
+
+- `bcrypt`: ^5.1.1
+- `jsonwebtoken`: ^9.0.2
+- `lucide-react`: ^0.417.0
+- `mongoose`: ^8.5.2
+- `next`: 14.2.5
+- `react`: ^18
+- `react-dom`: ^18
+- `react-icons`: ^5.2.1
+
+## Dev Dependencies
+
+These are the development dependencies used in the project:
+
+- `@types/bcrypt`: ^5.0.2
+- `@types/jsonwebtoken`: ^9.0.6
+- `@types/node`: ^20
+- `@types/react`: ^18
+- `@types/react-dom`: ^18
+- `eslint`: ^8
+- `eslint-config-next`: 14.2.5
+- `postcss`: ^8
+- `tailwindcss`: ^3.4.1
+- `typescript`: ^5
+
+## Usage
+
+To start the development server, run:
+
+```sh
+npm run dev
+```
+
+To build the application for production, run:
+
+```sh
+npm run build
+```
+
+To start the application in production mode, run:
+
+```sh
+npm run start
+```
+
+To run the linter, run:
+
+```sh
+npm run lint
+```
+
+## Folder Structure
+
+Here's a basic folder structure for your project:
+
+```
+.
+├── public
+│   └── favicon.ico
+├── src
+│   ├── components
+│   ├── pages
+│   ├── styles
+│   └── utils
+├── .eslintrc.json
+├── .gitignore
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── README.md
+└── tailwind.config.js
+```
+
+- `public`: Static assets like images, fonts, etc.
+- `src/components`: React components.
+- `src/pages`: Next.js pages.
+- `src/styles`: CSS/SCSS files.
+- `src/utils`: Utility functions.
+- `.eslintrc.json`: ESLint configuration.
+- `.gitignore`: Git ignore file.
+- `next.config.js`: Next.js configuration.
+- `package.json`: Project dependencies and scripts.
+- `postcss.config.js`: PostCSS configuration.
+- `tailwind.config.js`: Tailwind CSS configuration.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
